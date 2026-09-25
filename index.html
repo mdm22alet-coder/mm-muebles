@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MueblesPro: diseño, calidad y confort para tu hogar.">
+  <title>MueblesPro | Diseño, calidad y confort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Envío gratis en Medellín por compras superiores a $1.500.000</div>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="MueblesPro, inicio"><span class="brand-mark">MM</span><span class="brand-copy">Muebles<span>Pro</span><small>Diseño, calidad y confort</small></span></a>
+    <span class="luxuri-logo" aria-label="LUXURI"><i>Atelier</i><strong>LUXURI</strong></span>
+    <button class="menu-button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+    <nav id="nav"><a href="#inicio">Inicio</a><a href="#categorias">Categorías</a><a href="#productos">Colección</a><a href="#nosotros">Nosotros</a></nav>
+    <div class="header-tools">
+      <button class="tool-button" id="search-toggle" aria-label="Buscar productos">⌕</button>
+      <button class="tool-button cart-tool" id="cart-toggle" aria-label="Abrir carrito">🛒 <b id="cart-count">0</b></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Colección 2026</p>
+        <h1>Tu hogar merece<br><em>algo extraordinario.</em></h1>
+        <p>Piezas que combinan diseño, comodidad y una elegancia que perdura.</p>
+        <div class="hero-actions"><a class="button gold" href="#productos">Ver colección <span>→</span></a><a class="under-link" href="#nosotros">Conoce MueblesPro</a></div>
+      </div>
+      <div class="hero-ring" aria-hidden="true"><i></i><i></i><span>Elegancia<br>para habitar</span></div>
+      <a class="discover" href="#categorias">— Descubre</a>
+    </section>
+    <div class="moving-line" aria-hidden="true"><span>Diseño que habita</span><i>✦</i><span>Objetos con intención</span><i>✦</i><span>MueblesPro / 2026</span><i>✦</i><span>Diseño que habita</span></div>
+
+    <section class="section categories" id="categorias">
+      <div class="heading centered"><p class="eyebrow">Encuentra tu espacio</p><h2>Hecho para cada rincón de tu hogar</h2></div>
+      <div class="category-grid">
+        <a class="category-card" href="#productos" data-category="Sala"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=85" alt="Sofá moderno en una sala"><span>Sala<small>Explorar →</small></span></a>
+        <a class="category-card" href="#productos" data-category="Comedor"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=900&q=85" alt="Comedor de madera"><span>Comedor<small>Explorar →</small></span></a>
+        <a class="category-card" href="#productos" data-category="Habitación"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85" alt="Dormitorio elegante"><span>Habitacion<small>Explorar →</small></span></a>
+        <a class="category-card" href="#productos" data-category="Oficina"><img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=900&q=85" alt="Oficina minimalista"><span>Oficina<small>Explorar →</small></span></a>
+      </div>
+    </section>
+
+    <section class="section products-section" id="productos">
+      <div class="products-top"><div class="heading"><p class="eyebrow">Nuestra selección</p><h2>Favoritos de la colección</h2></div><div class="filters"><button class="active" data-filter="Todos">Todos</button><button data-filter="Sala">Sala</button><button data-filter="Comedor">Comedor</button><button data-filter="Habitación">Habitación</button><button data-filter="Oficina">Oficina</button></div></div>
+      <p class="empty" id="empty" hidden>No encontramos muebles para esta búsqueda.</p>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="see-more"><button class="button outline" id="show-more">Ver todos los productos</button></p>
+    </section>
+
+    <section class="story" id="nosotros">
+      <div class="story-image"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Sala contemporánea decorada"></div>
+      <div class="story-copy"><p class="eyebrow">Nuestra promesa</p><h2>Diseño que se siente como hogar.</h2><p>Seleccionamos materiales duraderos y trabajamos cada detalle para que tus espacios cuenten una historia: la tuya.</p><div class="stats"><div><strong>10+</strong><span>Años creando hogares</span></div><div><strong>100%</strong><span>Materiales seleccionados</span></div><div><strong>5.000</strong><span>Hogares felices</span></div></div><a class="under-link" href="#inicio">Nuestra historia →</a></div>
+    </section>
+
+    <section class="section services"><div class="heading centered"><p class="eyebrow">Una experiencia completa</p><h2>Mucho más que muebles</h2></div><div class="service-grid"><article><b>✦</b><h3>Asesoría personalizada</h3><p>Te ayudamos a encontrar las piezas ideales para tu espacio y estilo.</p></article><article><b>◇</b><h3>Calidad garantizada</h3><p>Materiales cuidadosamente elegidos para acompañarte por muchos años.</p></article><article><b>⌂</b><h3>Entrega a domicilio</h3><p>Recibe tu compra de forma segura, puntual y lista para disfrutar.</p></article></div></section>
+  </main>
+
+  <footer><div class="footer-top"><a class="brand" href="#inicio"><span class="brand-mark">MM</span><span class="brand-copy">Muebles<span>Pro</span><small>Diseño, calidad y confort</small></span></a><span class="luxuri-logo" aria-label="LUXURI"><i>Atelier</i><strong>LUXURI</strong></span><p>Transformamos espacios en hogares desde 2016.</p><a class="button gold" href="https://wa.me/573000000000?text=Hola%2C%20quiero%20conocer%20el%20catálogo%20de%20MueblesPro" target="_blank" rel="noreferrer">Habla con nosotros</a></div><div class="footer-bottom"><span>© 2026 MueblesPro. Todos los derechos reservados.</span><span>Medellín, Colombia</span></div></footer>
+
+  <div class="modal-shell" id="search-modal" aria-hidden="true"><div class="search-dialog"><button class="close" data-close="search-modal" aria-label="Cerrar">×</button><p class="eyebrow">Busca en MueblesPro</p><label class="search-input">⌕ <input id="search-input" type="search" placeholder="Sofás, mesas, camas..." autocomplete="off"></label><div class="search-results" id="search-results"></div></div></div>
+  <div class="backdrop" id="backdrop" hidden></div>
+  <aside class="cart" id="cart" aria-hidden="true"><header><h2>Tu carrito</h2><button class="close" data-close="cart" aria-label="Cerrar">×</button></header><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty">🛒<p>Tu carrito está vacío.</p><button data-close="cart">Ver productos</button></div><div class="cart-summary" id="cart-summary" hidden><div><span>Subtotal</span><strong id="cart-total">$0</strong></div><small>El envío se calcula al confirmar el pedido.</small><button class="button gold" id="whatsapp-order">Pedir por WhatsApp</button></div></aside>
+  <div class="modal-shell" id="details-modal" aria-hidden="true"><article class="details"><button class="close" data-close="details-modal" aria-label="Cerrar">×</button><img id="details-image" src="" alt=""><div><p class="eyebrow" id="details-category"></p><h2 id="details-title"></h2><p id="details-description"></p><strong id="details-price"></strong><button class="button gold" id="details-add">Agregar al carrito</button></div></article></div>
+  <button class="whatsapp" id="whatsapp">◉ <span>WhatsApp</span></button>
+  <script src="script.js"></script>
+</body>
+</html>
